@@ -102,7 +102,8 @@ font = ImageFont.load_default()
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 # font = ImageFont.truetype('Minecraftia.ttf', 8)
 
-while True:
+counter = 0
+while counter < 1:
 
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
@@ -133,5 +134,4 @@ while True:
     # Display image.
     disp.image(image)
     disp.display()
-    time.sleep(1.0)
-
+    counter = counter + 1
